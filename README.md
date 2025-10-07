@@ -14,58 +14,38 @@ Our platform leverages AI and ML to automate LCA processes, providing actionable
 Current LCA tools are either too generic or require extensive expertise, limiting their practical adoption in metallurgy and mining. There is a need for an intuitive, AI-powered platform that allows metallurgists, engineers, and decision-makers to:
 
 Perform automated LCAs for metals (aluminium, copper, critical minerals)
-
 Focus on circularity and sustainable resource use
-
 Access actionable insights even with limited data
 
 🔹 Proposed Solution
 
 The platform is designed to:
-
 Input & Selection:
 Users can input or select production process details, including:
-
 Raw vs. recycled material routes
-
 Energy consumption
-
 Transport and logistics
-
 End-of-life scenarios
 
 AI/ML Predictions:
-
 Estimate missing environmental and circularity parameters
-
 Predict indicators such as recycled content, resource efficiency, extended product life, and potential for reuse
 
 Visualizations:
-
 Circular flow opportunities
-
 Environmental impacts across the full value chain
-
 Comparative dashboards for conventional vs. circular processing pathways
 
 Automated Reports:
-
 Generate actionable recommendations to reduce impacts and enhance circularity
-
 Scenario Comparison:
-
 Easily compare conventional and circular production pathways
 
 🔹 Impact
-
 By adopting this tool, the metals sector can:
-
 Foster environmental sustainability
-
 Promote circular, resource-efficient systems
-
 Reduce waste and extend material lifetimes
-
 Support data-driven decision-making in product design, processing, and end-of-life management
 
 ⚙️ Technology Stack
@@ -120,19 +100,12 @@ backend/
 🌟 Features
 
 User-Friendly Input: Enter production process data, energy consumption, and recycling options
-
 AI/ML Predictions: Estimate missing environmental and circularity parameters
-
 Interactive Visualizations: Circular flows, environmental impact charts, and comparative dashboards
-
 Automated Reports: Generate recommendations for sustainable processing and design
-
 Scenario Comparison: Compare conventional vs. circular pathways
-
 Extensible: Easily integrate additional metals or process data
 
 📚 References
-
 ISO 14040 – Life Cycle Assessment Standards
-
 Circular Economy in Metals
