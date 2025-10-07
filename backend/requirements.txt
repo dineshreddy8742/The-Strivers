@@ -1,0 +1,14 @@
+flask
+flask-cors
+python-dotenv
+openai>=1.30.0
+google-generativeai
+reportlab
+requests
+groq
+gTTS
+PyPDF2
+python-docx
+Werkzeug
+langdetect
+deep-translator
