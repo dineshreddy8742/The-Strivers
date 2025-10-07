@@ -1,17 +1,10 @@
 services:
-  - type: web
-    name: eco-track-frontend
-    runtime: node
+  - type: psql
+    name: eco-track-db
     plan: free
     region: oregon
-    buildCommand: "npm install && npm run build"
-    startCommand: "npm start"
-    envVars:
-      - key: NEXT_PUBLIC_API_URL
-        fromService:
-          type: web
-          name: eco-track-backend
-          property: url
+    databaseName: eco_track
+    user: eco_track_user
 
   - type: web
     name: eco-track-backend
@@ -27,9 +20,16 @@ services:
           name: eco-track-db
           property: connectionString
 
-  - type: psql
-    name: eco-track-db
+  - type: web
+    name: eco-track-frontend
+    runtime: node
     plan: free
     region: oregon
-    databaseName: eco_track
-    user: eco_track_user
+    buildCommand: "npm install && npm run build"
+    startCommand: "npm start"
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: eco-track-backend
+          property: url
