@@ -1,48 +1,64 @@
-AI-Driven Life Cycle Assessment (LCA) Tool for Advancing Circularity and Sustainability in Metallurgy and Mining
-🔹 Description
-Background
+🌿 AI-Driven Life Cycle Assessment (LCA) Tool for Advancing Circularity and Sustainability in Metallurgy and Mining
 
-As industries increasingly emphasize sustainability, Life Cycle Assessment (LCA) is emerging not just as a tool for measuring environmental impact, but as a key strategy for advancing circularity. Metals such as aluminium, copper, and critical minerals—vital to sectors from energy to infrastructure—undergo multiple stages: from extraction and processing to use and end-of-life. Traditional linear models often result in resource depletion and waste.
+Team: The Strivers
+Problem Statement ID: SIH25069
 
-Modern LCA frameworks now assess not only emissions and resource use, but also the potential for reuse, recycling, and closed-loop systems. By informing decisions on product design, manufacturing, and end-of-life recovery, LCA enables a shift toward a circular economy where materials are kept in use longer and waste is minimized.
+🔹 Overview
 
-Problem Statement
+As industries increasingly emphasize sustainability, Life Cycle Assessment (LCA) is evolving beyond an environmental measurement tool into a key strategy for advancing circularity. Metals such as aluminium, copper, and critical minerals—vital to sectors from energy to infrastructure—undergo multiple stages: extraction, processing, use, and end-of-life. Traditional linear models often lead to resource depletion and waste.
 
-There is a need for an intuitive, AI-powered software platform that allows metallurgists, engineers, and decision-makers to perform automated LCAs for metals (aluminium, copper, critical minerals), with a focus on circularity and sustainable resource use.
+Our platform leverages AI and ML to automate LCA processes, providing actionable insights into environmental and circularity performance while promoting resource-efficient, circular systems.
 
-Proposed Solution
+🔹 Problem Statement
+
+Current LCA tools are either too generic or require extensive expertise, limiting their practical adoption in metallurgy and mining. There is a need for an intuitive, AI-powered platform that allows metallurgists, engineers, and decision-makers to:
+
+Perform automated LCAs for metals (aluminium, copper, critical minerals)
+
+Focus on circularity and sustainable resource use
+
+Access actionable insights even with limited data
+
+🔹 Proposed Solution
 
 The platform is designed to:
 
-Allow users to input or select process and production details, including:
+Input & Selection:
+Users can input or select production process details, including:
 
 Raw vs. recycled material routes
 
-Energy use
+Energy consumption
 
 Transport and logistics
 
 End-of-life scenarios
 
-Use AI/ML models to:
+AI/ML Predictions:
 
-Estimate missing parameters
+Estimate missing environmental and circularity parameters
 
-Predict environmental and circularity indicators, such as recycled content, resource efficiency, extended product life, and potential for reuse
+Predict indicators such as recycled content, resource efficiency, extended product life, and potential for reuse
 
-Provide visualizations of:
+Visualizations:
 
 Circular flow opportunities
 
-Environmental impacts across the full value chain (from extraction to recycling/reuse)
+Environmental impacts across the full value chain
 
-Enable easy comparison of conventional vs. circular processing pathways
+Comparative dashboards for conventional vs. circular processing pathways
 
-Generate actionable reports and recommendations for reducing impacts and enhancing circularity, even when user data is limited.
+Automated Reports:
 
-Impact
+Generate actionable recommendations to reduce impacts and enhance circularity
 
-With this tool, the metals sector will be empowered to make practical, data-driven choices that:
+Scenario Comparison:
+
+Easily compare conventional and circular production pathways
+
+🔹 Impact
+
+By adopting this tool, the metals sector can:
 
 Foster environmental sustainability
 
@@ -50,9 +66,9 @@ Promote circular, resource-efficient systems
 
 Reduce waste and extend material lifetimes
 
-Support decision-making for product design, processing, and end-of-life management
+Support data-driven decision-making in product design, processing, and end-of-life management
 
-⚙️ Technology Stack (Suggested)
+⚙️ Technology Stack
 Layer	Technology / Tools
 Frontend	React, Next.js, TypeScript, Tailwind CSS, Shadcn/ui
 Backend	Python, Flask / FastAPI, AI/ML Models
@@ -113,7 +129,7 @@ Automated Reports: Generate recommendations for sustainable processing and desig
 
 Scenario Comparison: Compare conventional vs. circular pathways
 
-Extensible: Easy integration with additional metals or process data
+Extensible: Easily integrate additional metals or process data
 
 📚 References
 
