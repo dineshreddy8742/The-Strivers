@@ -2,6 +2,7 @@
 # 🌿 AI-Driven Life Cycle Assessment (LCA) Tool for Advancing Circularity and Sustainability in Metallurgy and Mining
 
 **Team:** The Strivers
+
 **Problem Statement ID:** SIH25069
 
 ---
