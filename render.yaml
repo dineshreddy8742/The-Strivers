@@ -1,4 +1,3 @@
-
 services:
   - type: web
     name: eco-track-frontend
@@ -24,11 +23,11 @@ services:
     envVars:
       - key: DATABASE_URL
         fromService:
-          type: pserv
+          type: psql
           name: eco-track-db
           property: connectionString
 
-  - type: pserv
+  - type: psql
     name: eco-track-db
     plan: free
     region: oregon
