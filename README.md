@@ -1,141 +1,122 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+AI-Driven Life Cycle Assessment (LCA) Tool for Advancing Circularity and Sustainability in Metallurgy and Mining
+🔹 Description
+Background
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+As industries increasingly emphasize sustainability, Life Cycle Assessment (LCA) is emerging not just as a tool for measuring environmental impact, but as a key strategy for advancing circularity. Metals such as aluminium, copper, and critical minerals—vital to sectors from energy to infrastructure—undergo multiple stages: from extraction and processing to use and end-of-life. Traditional linear models often result in resource depletion and waste.
 
-## ✨ Technology Stack
+Modern LCA frameworks now assess not only emissions and resource use, but also the potential for reuse, recycling, and closed-loop systems. By informing decisions on product design, manufacturing, and end-of-life recovery, LCA enables a shift toward a circular economy where materials are kept in use longer and waste is minimized.
 
-This scaffold provides a robust foundation built with:
+Problem Statement
 
-### 🎯 Core Framework
-- **⚡ Next.js 15** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+There is a need for an intuitive, AI-powered software platform that allows metallurgists, engineers, and decision-makers to perform automated LCAs for metals (aluminium, copper, critical minerals), with a focus on circularity and sustainable resource use.
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+Proposed Solution
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
+The platform is designed to:
 
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Axios** - Promise-based HTTP client
+Allow users to input or select process and production details, including:
 
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation Node.js and TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
+Raw vs. recycled material routes
 
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
+Energy use
 
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
+Transport and logistics
 
-## 🎯 Why This Scaffold?
+End-of-life scenarios
 
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
+Use AI/ML models to:
 
-## 🚀 Quick Start
+Estimate missing parameters
 
-```bash
-# Install dependencies
+Predict environmental and circularity indicators, such as recycled content, resource efficiency, extended product life, and potential for reuse
+
+Provide visualizations of:
+
+Circular flow opportunities
+
+Environmental impacts across the full value chain (from extraction to recycling/reuse)
+
+Enable easy comparison of conventional vs. circular processing pathways
+
+Generate actionable reports and recommendations for reducing impacts and enhancing circularity, even when user data is limited.
+
+Impact
+
+With this tool, the metals sector will be empowered to make practical, data-driven choices that:
+
+Foster environmental sustainability
+
+Promote circular, resource-efficient systems
+
+Reduce waste and extend material lifetimes
+
+Support decision-making for product design, processing, and end-of-life management
+
+⚙️ Technology Stack (Suggested)
+Layer	Technology / Tools
+Frontend	React, Next.js, TypeScript, Tailwind CSS, Shadcn/ui
+Backend	Python, Flask / FastAPI, AI/ML Models
+Database	SQLite / PostgreSQL, Prisma ORM
+AI/ML	TensorFlow / PyTorch, Scikit-learn
+Visualization	Plotly, Recharts, D3.js
+Authentication	OAuth / JWT
+Deployment	Docker, Vercel / AWS / GCP
+🚀 Quick Start (Example)
+# Clone the repository
+git clone https://github.com/dineshreddy8742/The-Strivers.git
+cd The-Strivers
+
+# Install frontend dependencies
 npm install
 
-# Start development server
+# Setup backend environment
+cd backend
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+# Set environment variables
+# Example: DATABASE_URL, AI_API_KEY
+set DATABASE_URL=file:./dev.db
+set AI_API_KEY=<your-key>
+
+# Start development servers
+# Frontend
 npm run dev
+# Backend
+python app.py
 
-# Build for production
-npm run build
 
-# Start production server
-npm start
-```
+Open http://localhost:3000
+ to view the application.
 
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
-
-## 🤖 Powered by Z.ai
-
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
-
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
-
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
-
-## 📁 Project Structure
-
-```
+📁 Project Structure
 src/
-├── app/                 # Next.js App Router pages
+├── app/                 # Frontend App Router pages
 ├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
-```
+├── hooks/               # Custom React hooks
+├── lib/                 # Utility functions
+backend/
+├── app.py               # Flask / FastAPI backend
+├── models/              # AI/ML models & preprocessing
+├── venv/                # Python virtual environment (ignored in Git)
 
-## 🎨 Available Features & Components
+🌟 Features
 
-This scaffold includes a comprehensive set of modern web development tools:
+User-Friendly Input: Enter production process data, energy consumption, and recycling options
 
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
+AI/ML Predictions: Estimate missing environmental and circularity parameters
 
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
+Interactive Visualizations: Circular flows, environmental impact charts, and comparative dashboards
 
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
+Automated Reports: Generate recommendations for sustainable processing and design
 
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Axios + TanStack Query
-- **State Management**: Simple and scalable with Zustand
+Scenario Comparison: Compare conventional vs. circular pathways
 
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
+Extensible: Easy integration with additional metals or process data
 
-## 🤝 Get Started with Z.ai
+📚 References
 
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+ISO 14040 – Life Cycle Assessment Standards
 
----
-
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+Circular Economy in Metals
