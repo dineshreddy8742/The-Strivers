@@ -19,34 +19,56 @@ Access actionable insights even with limited data
 
 🔹 Proposed Solution
 
-The platform is designed to:
-Input & Selection:
+The platform is designed to provide a comprehensive, AI-driven Life Cycle Assessment for metals, focusing on circularity and sustainability:
+
+1. Input & Selection
 Users can input or select production process details, including:
+
 Raw vs. recycled material routes
+
 Energy consumption
+
 Transport and logistics
+
 End-of-life scenarios
 
-AI/ML Predictions:
+2. AI/ML Predictions
+
 Estimate missing environmental and circularity parameters
-Predict indicators such as recycled content, resource efficiency, extended product life, and potential for reuse
 
-Visualizations:
-Circular flow opportunities
-Environmental impacts across the full value chain
-Comparative dashboards for conventional vs. circular processing pathways
+Predict key indicators such as recycled content, resource efficiency, extended product life, and potential for reuse
 
-Automated Reports:
-Generate actionable recommendations to reduce impacts and enhance circularity
-Scenario Comparison:
+3. Visualizations
+
+Display circular flow opportunities
+
+Show environmental impacts across the full value chain
+
+Provide comparative dashboards for conventional vs. circular processing pathways
+
+4. Automated Reports
+
+Generate actionable recommendations to reduce environmental impact
+
+Suggest strategies to enhance material circularity
+
+5. Scenario Comparison
+
 Easily compare conventional and circular production pathways
 
+Enable informed decision-making for process optimization
+
 🔹 Impact
+
 By adopting this tool, the metals sector can:
-Foster environmental sustainability
-Promote circular, resource-efficient systems
-Reduce waste and extend material lifetimes
-Support data-driven decision-making in product design, processing, and end-of-life management
+
+Foster environmental sustainability by reducing resource depletion and emissions
+
+Promote circular, resource-efficient systems across the supply chain
+
+Reduce waste and extend material lifetimes through improved recycling and reuse strategies
+
+Support data-driven decision-making for product design, processing, and end-of-life management
 
 ⚙️ Technology Stack
 Layer	Technology / Tools
