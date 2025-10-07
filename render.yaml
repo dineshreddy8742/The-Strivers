@@ -1,0 +1,36 @@
+
+services:
+  - type: web
+    name: eco-track-frontend
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: "npm install && npm run build"
+    startCommand: "npm start"
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: eco-track-backend
+          property: url
+
+  - type: web
+    name: eco-track-backend
+    runtime: python
+    plan: free
+    region: oregon
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "gunicorn --chdir backend app:app"
+    envVars:
+      - key: DATABASE_URL
+        fromService:
+          type: pserv
+          name: eco-track-db
+          property: connectionString
+
+  - type: pserv
+    name: eco-track-db
+    plan: free
+    region: oregon
+    databaseName: eco_track
+    user: eco_track_user

@@ -113,17 +113,24 @@
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+  /* Avoid applying borders to every element which creates a cluttered UI. */
+  :where(:not(pre, code, kbd, samp)) *:where(:not(.no-border)) {
+    outline: none; /* remove forced outline from all elements */
   }
+
   body {
-    @apply bg-background-light text-foreground;
+    /* Use the semantic variables and Tailwind utility classes via @apply where appropriate */
+    @apply bg-background text-foreground antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
-    @apply text-heading-dark;
+    color: var(--foreground);
+    font-weight: 600;
+    line-height: 1.2;
+    margin: 0 0 0.5rem 0;
   }
   p {
-    @apply text-gray-700;
+    color: var(--muted-foreground);
+    margin: 0 0 1rem 0;
   }
 }
 
