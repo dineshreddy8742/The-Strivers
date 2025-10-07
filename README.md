@@ -1,6 +1,3 @@
-Absolutely! Here's a **structured, clean, and professional README** for your LCA tool submission, tailored for your team “The Strivers” and formatted for clarity. I’ve avoided any unnecessary gaps and kept it submission-ready for SIH/PS context:
-
----
 
 # 🌿 AI-Driven Life Cycle Assessment (LCA) Tool for Advancing Circularity and Sustainability in Metallurgy and Mining
 
