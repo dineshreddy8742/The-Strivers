@@ -1,11 +1,18 @@
+# ================================
+# 🌿 Eco-Track Deployment Blueprint
+# ================================
+
 services:
-  - type: psql
+  # 🗄️ PostgreSQL Database
+  - type: pserv
     name: eco-track-db
+    env: postgres
     plan: free
     region: oregon
     databaseName: eco_track
     user: eco_track_user
 
+  # ⚙️ Python Backend (Flask/FastAPI)
   - type: web
     name: eco-track-backend
     runtime: python
@@ -14,12 +21,22 @@ services:
     buildCommand: "pip install -r backend/requirements.txt"
     startCommand: "gunicorn --chdir backend app:app"
     envVars:
+      # Connect backend to the database
       - key: DATABASE_URL
         fromService:
-          type: psql
+          type: pserv
           name: eco-track-db
           property: connectionString
 
+      # Optional API keys (set manually in Render dashboard)
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: FIREBASE_API_KEY
+        sync: false
+      - key: SECRET_KEY
+        sync: false
+
+  # 🌐 Node.js Frontend (React/Next.js)
   - type: web
     name: eco-track-frontend
     runtime: node
@@ -28,8 +45,15 @@ services:
     buildCommand: "npm install && npm run build"
     startCommand: "npm start"
     envVars:
+      # Connect frontend to backend API
       - key: NEXT_PUBLIC_API_URL
         fromService:
           type: web
           name: eco-track-backend
           property: url
+
+      # Optional environment variables
+      - key: FIREBASE_API_KEY
+        sync: false
+      - key: NEXT_PUBLIC_GEMINI_KEY
+        sync: false
