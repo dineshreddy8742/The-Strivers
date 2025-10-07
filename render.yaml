@@ -1,12 +1,10 @@
 # ================================
 # 🌿 Eco-Track Deployment Blueprint
 # ================================
-
 services:
   # 🗄️ PostgreSQL Database
-  - type: pserv
+  - type: postgres
     name: eco-track-db
-    env: postgres
     plan: free
     region: oregon
     databaseName: eco_track
@@ -24,10 +22,9 @@ services:
       # Connect backend to the database
       - key: DATABASE_URL
         fromService:
-          type: pserv
+          type: postgres
           name: eco-track-db
           property: connectionString
-
       # Optional API keys (set manually in Render dashboard)
       - key: GEMINI_API_KEY
         sync: false
@@ -51,7 +48,6 @@ services:
           type: web
           name: eco-track-backend
           property: url
-
       # Optional environment variables
       - key: FIREBASE_API_KEY
         sync: false
