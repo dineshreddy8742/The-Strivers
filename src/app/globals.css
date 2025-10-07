@@ -222,4 +222,10 @@
 
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #8E44AD;
-  bord
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #9B59B6;
+}
+

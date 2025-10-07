@@ -152,7 +152,7 @@ export default function LCADashboard() {
           {metrics.map((metric, index) => (
             <Tooltip key={index}>
               <TooltipTrigger asChild>
-                <Card className="bg-white shadow-sm glow-card">
+                <Card className="bg-card-bg shadow-sm glow-card">
                   <CardContent className="p-6">
                     <div className="flex items-center justify-between">
                       <div>
@@ -185,7 +185,7 @@ export default function LCADashboard() {
           <TabsContent value="overview" className="space-y-8">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
               {/* Recent Assessments */}
-              <Card className="glow-card">
+              <Card className="bg-card-bg glow-card">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 font-bold">
                     <FileText className="w-5 h-5" />
@@ -197,7 +197,7 @@ export default function LCADashboard() {
                 </CardHeader>
                 <CardContent className="space-y-4">
                   {recentAssessments.map((assessment) => (
-                    <div key={assessment.id} className="flex items-center justify-between p-4 border rounded-lg">
+                    <div key={assessment.id} className="flex items-center justify-between p-4 border border-border-light rounded-lg bg-card-bg">
                       <div className="flex-1">
                         <h4 className="font-bold text-base text-slate-900">{assessment.name}</h4>
                         <div className="flex items-center gap-2 mt-1">
@@ -220,7 +220,7 @@ export default function LCADashboard() {
               </Card>
 
               {/* Process Impact Analysis */}
-              <Card className="glow-card">
+              <Card className="bg-card-bg glow-card">
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 font-bold">
                     <BarChart3 className="w-5 h-5" />
@@ -250,8 +250,7 @@ export default function LCADashboard() {
               </Card>
             </div>
 
-            {/* Quick Actions */}
-            <Card className="glow-card">
+            <Card className="bg-card-bg glow-card">
               <CardHeader>
                 <CardTitle className="font-bold">Quick Actions</CardTitle>
                 <CardDescription>
@@ -291,7 +290,7 @@ export default function LCADashboard() {
 
           {/* Assessments Tab */}
           <TabsContent value="assessments">
-            <Card className="glow-card">
+            <Card className="bg-card-bg glow-card">
               <CardHeader>
                 <CardTitle className="font-bold">LCA Assessments</CardTitle>
                 <CardDescription>
